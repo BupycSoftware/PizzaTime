@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="radio" name="choice" id="pizza" checked>
+    <input type="radio" name="choice" id="drink">
+    <input type="radio" name="choice" id="idk">
+    <input type="button" value="Zakaz" id="phonezakaz">
+    <input type="button" value="Заказать" id="zakaz">
+    <input type="button" value="Details" id="next">
+    <main>
+        <header class="main_header">
+            <img src="img/logo3.png" alt="logo">
+            <section>
+                <div class="item">
+                    <img src="img/pizza.png" alt="pizza_ico">
+                    <a href="#">Меню</a>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="img/sale.png" alt="sale_ico">
+                    <a href="#">Акции</a>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="img/delivery.png" alt="delivery_ico">
+                    <a href="#">Доставка</a>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="img/contacts.png" alt="contacts_ico">
+                    <a href="#">Контакты</a>
+                </div>
+            </section>
+            <div class="item2">
+                <img src="img/phone.png" alt="phone_ico">
+                <p>+(380)679-347-433</p>
+                <img src="img/trash.png" alt="trash_ico">
+            </div>
+        </header>
+        <aside>
+            <header>
+                <h1 class="aside_h1">Наше меню</h1>
+            </header>
+            <nav>
+                <label for="pizza" class="nav_label">Пицца</label>
+                <label for="drink" class="nav_label">Напитки</label>
+                <label for="idk" class="nav_label">Coming soon....</label>
+            </nav>
+            <!--                       PIZZA                                     -->
+            <menu class="menuofpizza">
+                <div class="block">
+                    <img src="img/pizza1.png" alt="pizza1_png" class="pizzaimg">
+                    <p class="title">Барбекю</p>
+                    <p class="descr">Тесто, соус барбекю, бекон, ветчина, томаты</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="73" selected>21 см</option>
+                            <option value="95">33 см</option>
+                            <option value="125">56 см</option>
+                        </select>
+                        <p class="price">73 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/pizza2.png" alt="pizza2_png" class="pizzaimg">
+                    <p class="title">Ветчина и грибы</p>
+                    <p class="descr">Тесто, томатный соус, ветчина, шампиньони</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="69" selected>21 см</option>
+                            <option value="88">33 см</option>
+                            <option value="105">56 см</option>
+                        </select>
+                        <p class="price">69 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/pizza3.png" alt="pizza3_png" class="pizzaimg">
+                    <p class="title">Гриль</p>
+                    <p class="descr">Тесто, соус гриль, бекон, курица, маринованные</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="65" selected>21 см</option>
+                            <option value="98">33 см</option>
+                            <option value="121">56 см</option>
+                        </select>
+                        <p class="price">65 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/pizza4.png" alt="pizza4_png" class="pizzaimg">
+                    <p class="title">Куриная</p>
+                    <p class="descr">Тесто, томатный соус, курица, томат, лук, мацарелла, гауда</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="80" selected>21 см</option>
+                            <option value="100">33 см</option>
+                            <option value="110">56 см</option>
+                        </select>
+                        <p class="price">80 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/pizza5.png" alt="pizza5_png" class="pizzaimg">
+                    <p class="title">Мексиканская</p>
+                    <p class="descr">Тесто, томатный соус, ветчина, шампиньоны, болгарский перец</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="99" selected>21 см</option>
+                            <option value="124">33 см</option>
+                            <option value="156">56 см</option>
+                        </select>
+                        <p class="price">99 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/pizza6.png" alt="pizza6_png" class="pizzaimg">
+                    <p class="title">Пепперони</p>
+                    <p class="descr">Тесто, томатный соус, пепперони, мацарелла, гауда</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="95" selected>21 см</option>
+                            <option value="131">33 см</option>
+                            <option value="145">56 см</option>
+                        </select>
+                        <p class="price">95 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+            </menu>
+            <!--                                  DRINK                                   -->
+            <menu class="menuofdrink">
+                <div class="block">
+                    <img src="img/drink1.png" alt="drink1_png" class="drinkimg">
+                    <p class="title">Напиток "Кока-кола"</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="20" selected>0,33 л.</option>
+                            <option value="30">0,5 л.</option>
+                            <option value="35">1 л.</option>
+                        </select>
+                        <p class="price">20 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/drink2.png" alt="drink2_png" class="drinkimg2">
+                    <p class="title">Напиток "Пепси-кола"</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="15" selected>0,33 л.</option>
+                            <option value="25">0,5 л.</option>
+                            <option value="30">1 л.</option>
+                        </select>
+                        <p class="price">15 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+                <div class="block">
+                    <img src="img/drink3.png" alt="drink3_png" class="drinkimg3">
+                    <p class="title">Напиток "Спрайт"</p>
+                    <div class="inline">
+                        <select name="size" class="objectsize">
+                            <option value="15" selected>0,33 л.</option>
+                            <option value="23">0,5 л.</option>
+                            <option value="30">1 л.</option>
+                        </select>
+                        <p class="price">15 грн</p>
+                    </div>
+                    <label for="zakaz">Заказать</label>
+                </div>
+            </menu>
+        </aside>
+        <article class="map">
+            <header>
+                <h1 class="map_h1">Где нас найти?</h1>
+            </header>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6984.605893892459!2d30.46517580577529!3d50.426645562653846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x638e8cfbdbe5fddc!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0YLQtdC70LXQutC-0LzQvNGD0L3QuNC60LDRhtC40Lk!5e0!3m2!1sru!2sua!4v1550790452975" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </article>
+        <footer>
+            <div class="footer_left">
+                <div class="rowno">
+                    <img src="img/logo3_white.png" alt="logo3_white_png">
+                    <div class="adress_marker">
+                        <img src="img/marker.png" alt="marker_png" class="marker">
+                        <p class="adress">Украина, г. Киев, ульца Соломенская 7а</p>
+                    </div>
+                    <p class="copy">Copyright&#169; Все права защищены 2019</p>
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="footer_menu">
+                    <a href="#" class="link">Меню  /  Акции</a>
+                    <a href="#" class="link">Доставка  /  Контакти</a>
+                </div>
+                <div class="footer_menu2">
+                    <div class="item2">
+                        <img src="img/phone.png" alt="phone_ico">
+                        <p class="number">+(380)679-347-433</p>
+                    </div>
+                    <label for="phonezakaz" class="footer_label">ЗАКАЗАТЬ ЗВОНОК</label>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="oformzakaz">
+        <div class="form">
+            <a href="#" class="close" id="zakr"></a>
+            <div class="top">
+                <header>
+                    <h1 class="form_h1">Добавки:</h1>
+                </header>
+                <div class="addpizza">
+                    <table class="addtable">
+                        <tr>
+                            <td><ul><li><span>Сир 50 гр.</span></li></ul></td>
+                            <td>20 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Ветчина 50 гр.</span></li></ul></td>
+                            <td>20 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Маслины 50 гр.</span></li></ul></td>
+                            <td>35 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Маринованные огурчики 50 гр.</span></li></ul></td>
+                            <td>20 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Пепперони 50 гр.</span></li></ul></td>
+                            <td>30 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Грибы Шампиньоны 50 гр.</span></li></ul></td>
+                            <td>30 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Куриное филе 50 гр.</span></li></ul></td>
+                            <td>30 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td><ul><li><span>Бекон 50 гр.</span></li></ul></td>
+                            <td>45 грн</td>
+                            <td>
+                                <input type="number" min="0" value="0">
+                            </td>
+                            <td>0 грн</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Цена:</td>
+                            <td class="price2">0 грн</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <table class="footertable">
+                    <tr>
+                        <td class="itogo">Итого:</td>
+                        <td class="price2">0 грн</td>
+                        <td><label for="next">Оформить заказ</label></td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+        <div class="form2">
+            <a href="#" class="close"></a>
+            Тут форма ім'я, телефон, адрес з валідацією
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
