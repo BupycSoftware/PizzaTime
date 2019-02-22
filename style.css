@@ -489,7 +489,7 @@ label[for="next"] {
     font-weight: bold;
 }
 
-.cola_png {
+#cola_png {
     display: none;
     width: 50px;
 }
