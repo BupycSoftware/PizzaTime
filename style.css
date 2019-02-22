@@ -451,6 +451,7 @@ ul {
 
 .addtable td:nth-child(4) {
     text-align: end;
+    width: 140px;
 }
 
 .addtable tr:last-child td {
