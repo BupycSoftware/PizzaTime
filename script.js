@@ -19,6 +19,16 @@ function calculateAdditionalPrice (){
     return price
 }
 
+function resetOrder () {
+    $('.addition-price-input').each((index, item)=>{
+        $(item).val(0)
+        additionalPrice = 0
+        const a = $(item).parent('td').siblings('td')[2]
+        $(a).text(0 + ' грн')
+        $('#additionPrice').text(0 + 'грн') 
+    })
+}
+
 $('.objectsize').on('change', (()=>{
     $(event.target.nextElementSibling).text(event.target.value + " грн")
 }))
@@ -60,11 +70,11 @@ $('.addition-price-input').each((index, item)=>{
 
 
 
+
+
 $(document).ready(function () {
     $("#zakaz").click(function(){
-        $('.addition-price-input').each((index,item)=>{
-            $(item).val(0)
-        })
+        resetOrder()
         $(".oformzakaz").fadeIn(500, function(){
             $(this).css("display", "block");
         });
