@@ -60,28 +60,28 @@
                     <p class="title">Барбекю</p>
                     <p class="descr">Тесто, соус барбекю, бекон, ветчина, томаты</p>
                     <div class="inline">
-                        <select name="size" class="objectsize">
+                        <select name="Барбекю" class="objectsize">
                             <option value="73" selected>21 см</option>
                             <option value="95">33 см</option>
                             <option value="125">56 см</option>
                         </select>
                         <p class="price">73 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza2.png" alt="pizza2_png" class="pizzaimg">
                     <p class="title">Ветчина и грибы</p>
                     <p class="descr">Тесто, томатный соус, ветчина, шампиньони</p>
                     <div class="inline">
-                        <select name="size" class="objectsize">
+                        <select name="Ветчина и грибы" class="objectsize">
                             <option value="69" selected>21 см</option>
                             <option value="88">33 см</option>
                             <option value="105">56 см</option>
                         </select>
                         <p class="price">69 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza3.png" alt="pizza3_png" class="pizzaimg">
@@ -95,7 +95,7 @@
                         </select>
                         <p class="price">65 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza4.png" alt="pizza4_png" class="pizzaimg">
@@ -109,7 +109,7 @@
                         </select>
                         <p class="price">80 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz"  class="zakaz-test">Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza5.png" alt="pizza5_png" class="pizzaimg">
@@ -123,7 +123,7 @@
                         </select>
                         <p class="price">99 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza6.png" alt="pizza6_png" class="pizzaimg">
@@ -137,7 +137,7 @@
                         </select>
                         <p class="price">95 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
             </menu>
             <!--                                  DRINK                                   -->
@@ -153,7 +153,7 @@
                         </select>
                         <p class="price">20 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/drink2.png" alt="drink2_png" class="drinkimg2">
@@ -166,7 +166,7 @@
                         </select>
                         <p class="price">15 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
                 <div class="block">
                     <img src="img/drink3.png" alt="drink3_png" class="drinkimg3">
@@ -179,7 +179,7 @@
                         </select>
                         <p class="price">15 грн</p>
                     </div>
-                    <label for="zakaz">Заказать</label>
+                    <label for="zakaz" class="zakaz-test" >Заказать</label>
                 </div>
             </menu>
         </aside>
@@ -224,75 +224,75 @@
                 </header>
                 <div class="addpizza">
                     <table class="addtable">
-                        <tr>
-                            <td><ul><li><span>Сир 50 гр.</span></li></ul></td>
-                            <td>20 грн</td>
+                        <tr class = "table-with-additions">
+                            <td><ul><li>Сир 50 гр.</li></ul></td>
+                            <td><span >20 </span>грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '20' type="number" min="0" value="0" class="addition-price-input">
                             </td>
-                            <td>0 грн</td>
+                            <td class="total_price">0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Ветчина 50 гр.</span></li></ul></td>
-                            <td>20 грн</td>
+                            <td><span >20 </span>грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '20' type="number" min="0" value="0" class="addition-price-input">
                             </td>
-                            <td>0 грн</td>
+                            <td class="total_price2">0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Маслины 50 гр.</span></li></ul></td>
                             <td>35 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '35' type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Маринованные огурчики 50 гр.</span></li></ul></td>
                             <td>20 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '20' type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Пепперони 50 гр.</span></li></ul></td>
                             <td>30 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '30'  type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Грибы Шампиньоны 50 гр.</span></li></ul></td>
                             <td>30 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '30' type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Куриное филе 50 гр.</span></li></ul></td>
                             <td>30 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '30' type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td><ul><li><span>Бекон 50 гр.</span></li></ul></td>
                             <td>45 грн</td>
                             <td>
-                                <input type="number" min="0" value="0">
+                                <input name = '45' type="number" min="0" value="0" class="addition-price-input">
                             </td>
                             <td>0 грн</td>
                         </tr>
-                        <tr>
+                        <tr class = "table-with-additions">
                             <td></td>
                             <td></td>
                             <td>Цена:</td>
-                            <td class="price2">0 грн</td>
+                            <td class="price2" id="additionPrice">0 грн</td>
                         </tr>
                     </table>
                 </div>
@@ -301,7 +301,7 @@
                 <table class="footertable">
                     <tr>
                         <td class="itogo">Итого:</td>
-                        <td class="price2">0 грн</td>
+                        <td class="price2" id='totalPrice'>0 грн</td>
                         <td><label for="next">Оформить заказ</label></td>
                     </tr>
                 </table>
