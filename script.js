@@ -23,6 +23,7 @@ function resetOrder () {
     $('.addition-price-input').each((index, item)=>{
         $(item).val(0)
         additionalPrice = 0
+        totalPizzaPrice = 0
         const a = $(item).parent('td').siblings('td')[2]
         $(a).text(0 + ' грн')
         $('#additionPrice').text(0 + 'грн') 
