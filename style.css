@@ -489,6 +489,11 @@ label[for="next"] {
     font-weight: bold;
 }
 
+.cola_png {
+    display: none;
+    width: 50px;
+}
+
 /*                MAP            */
 
 .map {
@@ -512,3 +517,4 @@ label[for="next"] {
     left: 25%;
     position: relative;
 }
+
