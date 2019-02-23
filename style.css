@@ -624,3 +624,40 @@ input:invalid:not(:placeholder-shown) + .form__error {
 input[type="text"]:last-child {
     height: 200px;
 }
+
+/*                 index2.html                */
+
+.your-order {
+    display: grid;
+    margin: auto;
+    background: orange;
+    grid-template-areas: 
+    "a a b b"
+    "a a b b"
+    "c c c c"
+    "c c c c"
+    "d d d d";
+    height: fit-content;
+    width: fit-content;
+    grid-gap: 10px;
+}
+
+.order-about-pizza {
+    grid-area: a;
+    border: 1px solid black;
+}
+
+.order-about-client {
+    grid-area: b;
+    border: 1px solid black;
+}
+
+.order-about-add {
+    grid-area: c;
+    border: 1px solid black;
+}
+
+.order-price {
+    grid-area: d;
+    border: 1px solid black;
+}
