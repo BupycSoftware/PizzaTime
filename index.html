@@ -67,7 +67,7 @@
                         </select>
                         <p class="price">73 грн</p>
                     </div>
-                    <label for="zakaz" class="order-pizza" >Заказать</label>
+                    <label for="zakaz" class="order-pizza" >Добавки</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza2.png" alt="pizza2_png" class="pizzaimg">
@@ -81,7 +81,7 @@
                         </select>
                         <p class="price">69 грн</p>
                     </div>
-                    <label for="zakaz" class="order-pizza" >Заказать</label>
+                    <label for="zakaz" class="order-pizza" >Добавки</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza3.png" alt="pizza3_png" class="pizzaimg">
@@ -95,7 +95,7 @@
                         </select>
                         <p class="price">65 грн</p>
                     </div>
-                    <label for="zakaz" class="order-pizza" >Заказать</label>
+                    <label for="zakaz" class="order-pizza" >Добавки</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza4.png" alt="pizza4_png" class="pizzaimg">
@@ -109,7 +109,7 @@
                         </select>
                         <p class="price">80 грн</p>
                     </div>
-                    <label for="zakaz"  class="order-pizza">Заказать</label>
+                    <label for="zakaz"  class="order-pizza">Добавки</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza5.png" alt="pizza5_png" class="pizzaimg">
@@ -123,7 +123,7 @@
                         </select>
                         <p class="price">99 грн</p>
                     </div>
-                    <label for="zakaz" class="order-pizza" >Заказать</label>
+                    <label for="zakaz" class="order-pizza" >Добавки</label>
                 </div>
                 <div class="block">
                     <img src="img/pizza6.png" alt="pizza6_png" class="pizzaimg">
@@ -137,7 +137,7 @@
                         </select>
                         <p class="price">95 грн</p>
                     </div>
-                    <label for="zakaz" class="order-pizza" >Заказать</label>
+                    <label for="zakaz" class="order-pizza" >Добавки</label>
                 </div>
             </menu>
             <!--                                  DRINK                                   -->
@@ -187,7 +187,7 @@
             <header>
                 <h1 class="map_h1">Где нас найти?</h1>
             </header>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6984.605893892459!2d30.46517580577529!3d50.426645562653846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x638e8cfbdbe5fddc!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0YLQtdC70LXQutC-0LzQvNGD0L3QuNC60LDRhtC40Lk!5e0!3m2!1sru!2sua!4v1550790452975" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6984.605893892459!2d30.46517580577529!3d50.426645562653846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x638e8cfbdbe5fddc!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0YLQtdC70LXQutC-0LzQvNGD0L3QuNC60LDRhtC40Lk!5e0!3m2!1sru!2sua!4v1550790452975" allowfullscreen></iframe>
         </article>
         <footer>
             <div class="footer_left">
@@ -225,8 +225,8 @@
                 <div class="addpizza">
                     <table class="addtable">
                         <tr class = "table-with-additions">
-                            <td><ul><li>Сир 50 гр.</li></ul></td>
-                            <td><span >20 </span>грн</td>
+                            <td><ul><li><span>Сир 50 гр.</span></li></ul></td>
+                            <td>20 грн</td>
                             <td>
                                 <input name = '20' type="number" min="0" value="0" class="addition-price-input">
                             </td>
@@ -234,7 +234,7 @@
                         </tr>
                         <tr class = "table-with-additions">
                             <td><ul><li><span>Ветчина 50 гр.</span></li></ul></td>
-                            <td><span >20 </span>грн</td>
+                            <td>20 грн</td>
                             <td>
                                 <input name = '20' type="number" min="0" value="0" class="addition-price-input">
                             </td>
@@ -302,17 +302,43 @@
                     <tr>
                         <td class="itogo">Итого:</td>
                         <td class="price2" id='totalPrice'>0 грн</td>
+                        <td id="plus_id">+</td>
                         <td class="cola">
                             <img src="img/free_cola.png" alt="cola_png" id="cola_png">
                         </td>
-                        <td><label for="next">Оформить заказ</label></td>
+                        <td><label for="next">Доставка</label></td>
                     </tr>
                 </table>
             </footer>
         </div>
         <div class="form2">
             <a href="#" class="close"></a>
-            Тут форма ім'я, телефон, адрес з валідацією
+            <a href="#" class="back">&#8617;</a>
+            <header>
+                <h1 class="form2_h1">Доставка:</h1>
+            </header>
+            <form action="" class="confirm-form">
+                <p>Имя и фамилия:</p>
+                <div class="form__field">
+                    <input type="text" name="name" required placeholder="Имя и фамилия" pattern="^[A-ZА-Я][A-Za-zа-яА-Я'` -]+$">
+                    <span class="form__error">Это поле должно иметь имя в формате: "Иван Петрович"</span>
+                </div>
+                <p>Телефон:</p>
+                <div class="form__field">
+                    <input type="tel" name="phone" required placeholder="Номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                    <span class="form__error">Это поле должно иметь телефон в формате: "0679347433"</span>
+                </div>
+                <p>Адрес:</p>
+                <div class="form__field">
+                    <input type="street-address" name="delivery" required placeholder="Адрес доставки" pattern="^[а-яa-zА-ЯA-Z0-9,.\s]+$">
+                    <span class="form__error">Некоректно введен адрес доставки</span>
+                </div>
+                <p>Комментарий:</p>
+                <div class="form__field">
+                    <input type="text" name="message" placeholder="Комментарий к заказу">
+                </div>
+            </form>
+            <a href="index2.html" class="confirmDelivery">Заказать</a>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
