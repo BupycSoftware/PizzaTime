@@ -10,25 +10,28 @@
 <body>
     <div class="your-order">
         <div class="order-about-pizza">
-            <img src="" alt="картинка выбраной пиццы">
-            <p>Название:</p>
-            <p>Размер:</p>
+            <img src="" alt="pizza" id='order-pizza-img'>
+            <p id='order-pizza-name'>Название</p>
+            <p id='order-pizza-size'>Размер</p>
         </div>
         <div class="order-about-client">
-            <p>Имя клиента</p>
-            <p>Номер клиента</p>
-            <p>Адрес клиента</p>
+            <p id="order-about-client-text">Информация о клиенте:</p>
+            <p id='order-pizza-client-name'>Имя клиента</p>
+            <p id='order-pizza-client-number'>Номер клиента</p>
+            <p id='order-pizza-client-adress'>Адрес клиента</p>
         </div>
-        <div class="order-about-add">
-            <p>Список выбраных добавок и их кол-во</p>
+        <div class="order-about-add-class" id="order-about-add">
+            <p id='addition-list'>Список выбранных добавок:</p>
         </div>
         <div class="order-price">
-            <p>К оплате:</p>
-            <a href="#">Всё верно</a>
-            <a href="#">Отменить заказ</a>
+            <p id='total-payment'>К оплате:</p>
+             <div class="flex">
+                <a href="#" class="good" onclick="window.close();">Всё верно</a>
+                <a href="index.html" class="bad">Отменить заказ</a>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

@@ -640,24 +640,62 @@ input[type="text"]:last-child {
     height: fit-content;
     width: fit-content;
     grid-gap: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .order-about-pizza {
     grid-area: a;
-    border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .order-about-client {
     grid-area: b;
-    border: 1px solid black;
 }
 
-.order-about-add {
+.order-about-add-class {
     grid-area: c;
-    border: 1px solid black;
 }
 
 .order-price {
     grid-area: d;
-    border: 1px solid black;
+    border-top: 2px solid red;
 }
+
+.order-about-pizza img {
+    height: 200px;
+}
+
+#order-pizza-name,
+#order-pizza-size {
+    margin: 0;
+}
+
+#addition-list,
+#order-about-client-text {
+    text-align: center;
+}
+
+.good,
+.bad {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid red;
+    padding-top: 20px;
+}
+

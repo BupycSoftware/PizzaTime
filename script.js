@@ -1,8 +1,25 @@
+let pizzaName = '';
+let pizzaSize = '';
+let pizzaImg = '';
 let totalPizzaPrice = 0
 let pizzaPrice = 0;
 let additionalPrice = 0;
-let additionPosition = [{count: 0, price: 0}];
+let additionPosition = [{count: 0, price: 0, name: ''}];
+let userInformation = {name: '', phone: '', delivery: '', message: ''};
 
+function sendDataToAnotherPage () {
+    console.log(0)
+    const data = {
+        pizzaName: pizzaName,
+        pizzaSize: pizzaSize,
+        pizzaImg: pizzaImg,
+        totalPizzaPrice: totalPizzaPrice,
+        userInformation: userInformation,
+        additionPosition: additionPosition
+    }
+    console.log(data)
+    localStorage.setItem( 'pizzaInformation', JSON.stringify(data) );
+}
 function checkCola () {
     if(totalPizzaPrice >= 100){
         totalPizzaPrice += 0.99
@@ -34,6 +51,11 @@ function resetOrder () {
     })
 }
 
+ $("#final-order").click(function(e){
+        sendDataToAnotherPage();
+});
+
+
 $('.objectsize').on('change', (()=>{
     $(event.target.nextElementSibling).text(event.target.value + " грн")
 }))
@@ -41,6 +63,13 @@ $('.objectsize').on('change', (()=>{
 $('.order-pizza').click(function(){
     const element = $(event.target);
     const chosenPizzaPrice = +element.siblings('.inline').find('.price')[0].innerHTML.substring(0,3)
+    const choosenPizzaName = element.siblings('.title')[0].innerHTML;
+    const choosenPizzaImg =  $(element.siblings('.pizzaimg')[0]).attr('src');
+    console.log(choosenPizzaImg)
+    const choosenPizzaSize = element.siblings('.inline').find('.objectsize').find(":selected").text();
+    pizzaSize = choosenPizzaSize
+    pizzaName = choosenPizzaName
+    pizzaImg = choosenPizzaImg
     pizzaPrice = chosenPizzaPrice
     totalPizzaPrice = chosenPizzaPrice
     checkCola();
@@ -49,12 +78,13 @@ $('.order-pizza').click(function(){
 
 $('.addition-price-input').each((index, item)=>{
     $(item).on("change, keyup, input", (()=>{
-        console.log(pizzaPrice)
         const fixPrice = +event.target.name
         let additionalItemPrice = fixPrice * event.target.value
+        const additionName = $(event.target).parent('td').siblings('td')[0].innerText
         additionPosition[index] = {};
         additionPosition[index].price = additionalItemPrice
         additionPosition[index].count = event.target.value
+        additionPosition[index].name = additionName
         if(additionPosition[index].count < event.target.value){
             additionalPrice -= additionalItemPrice
         }else{
@@ -68,8 +98,14 @@ $('.addition-price-input').each((index, item)=>{
         $(a).text(+additionalItemPrice + ' грн')
         $('#additionPrice').text(+additionalSum + ' грн')
         $('#totalPrice').text(+totalPizzaPrice + ' грн')
+        $('#total-payment').text(+totalPizzaPrice + ' грн')
+        sendDataToAnotherPage()
     }))
 })
+$('.order-input').on('change', (()=>{
+    userInformation[event.target.name] = event.target.value
+}))
+
 
 $(document).ready(function () {
     $("#zakaz").click(function(){

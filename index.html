@@ -320,25 +320,25 @@
             <form action="" class="confirm-form">
                 <p>Имя и фамилия:</p>
                 <div class="form__field">
-                    <input type="text" name="name" required placeholder="Имя и фамилия" pattern="^[A-ZА-Я][A-Za-zа-яА-Я'` -]+$">
+                    <input class = 'order-input' type="text" name="name" required placeholder="Имя и фамилия" pattern="^[A-ZА-Я][A-Za-zа-яА-Я'` -]+$">
                     <span class="form__error">Это поле должно иметь имя в формате: "Иван Петрович"</span>
                 </div>
                 <p>Телефон:</p>
                 <div class="form__field">
-                    <input type="tel" name="phone" required placeholder="Номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
-                    <span class="form__error">Это поле должно иметь телефон в формате: "0679347433"</span>
+                    <input  class = 'order-input' type="tel" name="phone" required placeholder="Номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" maxlength="12">
+                    <span class="form__error">Это поле должно иметь телефон в формате: "+79**********"</span>
                 </div>
                 <p>Адрес:</p>
                 <div class="form__field">
-                    <input type="street-address" name="delivery" required placeholder="Адрес доставки" pattern="^[а-яa-zА-ЯA-Z0-9,.\s]+$">
+                    <input  class = 'order-input' type="street-address" name="delivery" required placeholder="Адрес доставки" pattern="^[а-яa-zА-ЯA-Z0-9,.\s]+$">
                     <span class="form__error">Некоректно введен адрес доставки</span>
                 </div>
                 <p>Комментарий:</p>
                 <div class="form__field">
-                    <input type="text" name="message" placeholder="Комментарий к заказу">
+                    <input  class = 'order-input' type="text" name="message" placeholder="Комментарий к заказу">
                 </div>
             </form>
-            <a href="index2.html" class="confirmDelivery">Заказать</a>
+            <a href="index2.html" class="confirmDelivery" id='final-order'>Заказать</a>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
